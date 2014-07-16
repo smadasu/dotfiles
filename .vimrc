@@ -1,14 +1,10 @@
+let mapleader = ","
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set background=dark
-set t_Co=256
-:autocmd BufEnter,FileType *
-			\   if &ft ==# 'html' |
-			\   colorscheme default |
-			\   else | colorscheme solarized |
-			\   endif
-"colorscheme solarized
+let g:Powerline_symbols = 'fancy'
+colorscheme solarized
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
@@ -31,7 +27,6 @@ nmap <F2> :nohl<CR>
 nmap <F3> :%Eval<CR>
 
 "UltiSnips
-
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -41,3 +36,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 let $PYTHONPATH="/usr/lib/python3.3/site-packages" 
+
+
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
