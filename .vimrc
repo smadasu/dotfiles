@@ -22,9 +22,12 @@ set clipboard=unnamedplus
 set hidden
 nmap <leader>s :w<CR>
 nmap <leader>q :q<CR>
+set foldmethod=syntax
+set nofoldenable
 set relativenumber
 nmap <F2> :nohl<CR>
 nmap <F3> :%Eval<CR>
+nmap <F5> :!/usr/src/linux/scripts/checkpatch.pl -f %<CR>
 
 "UltiSnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
