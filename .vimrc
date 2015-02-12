@@ -10,8 +10,8 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 syntax enable
-set listchars=tab:▸\ ,eol:¬
 nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 set path=$PWD/**
@@ -26,8 +26,11 @@ set foldmethod=syntax
 set nofoldenable
 set relativenumber
 nmap <F2> :nohl<CR>
-nmap <F3> :%Eval<CR>
+nmap <F3> :Eval<CR>
+nmap <F4> :%Eval<CR>
 nmap <F5> :!/usr/src/linux/scripts/checkpatch.pl -f %<CR>
+nmap <F6> :!javac %<CR>
+nmap <F7> :!java %<CR>
 
 "UltiSnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -42,3 +45,4 @@ let $PYTHONPATH="/usr/lib/python3.3/site-packages"
 
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set bt=
