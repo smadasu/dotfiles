@@ -41,8 +41,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-let $PYTHONPATH="/usr/lib/python3.3/site-packages" 
+"let $PYTHONPATH="/usr/lib/python3.3/site-packages" 
 
 
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 set bt=
+set cursorline
