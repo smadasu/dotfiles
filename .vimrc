@@ -1,7 +1,25 @@
+set nocompatible
 let mapleader = ","
 execute pathogen#infect()
 syntax on
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-leiningen'
+Plugin 'tpope/vim-projectionist'
+Plugin 'honza/vim-snippets'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/syntastic'
+Plugin 'altercation/vim-colors-solarized'
+call vundle#end() 
 filetype plugin indent on
+
 set background=dark
 let g:Powerline_symbols = 'fancy'
 colorscheme solarized
