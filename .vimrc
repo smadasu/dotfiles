@@ -1,7 +1,3 @@
-set nocompatible
-let mapleader = ","
-execute pathogen#infect()
-syntax on
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -17,9 +13,12 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
 call vundle#end() 
 filetype plugin indent on
-
+let mapleader = ","
+syntax on
+set title
 set background=dark
 let g:Powerline_symbols = 'fancy'
 colorscheme solarized
