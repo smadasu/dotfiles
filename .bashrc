@@ -32,4 +32,3 @@ source $HOME/.bash-git-prompt/gitprompt.sh
 if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
-setxkbmap -option "caps:swapescape"
