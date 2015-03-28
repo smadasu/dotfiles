@@ -14,6 +14,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tfnico/vim-gradle'
+Plugin 'tpope/vim-classpath'
 call vundle#end() 
 filetype plugin indent on
 let mapleader = ","
