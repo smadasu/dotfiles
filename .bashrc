@@ -21,6 +21,7 @@ export LANG=en_US.utf8
 export PATH=$PATH:~/bin:~/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:$HOME/node-v0.10.30-linux-x64/bin
 alias ll='ls -lrt'
 alias tmux='TERM=screen-256color-bce tmux'
+alias gs='git status'
 
 # Turn on 256 color support...
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
