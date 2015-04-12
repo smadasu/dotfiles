@@ -29,7 +29,7 @@ if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 else
 	export TERM='xterm-color'
 fi
-source $HOME/.bash-git-prompt/gitprompt.sh
+source $HOME/bash-git-prompt/gitprompt.sh
 if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi

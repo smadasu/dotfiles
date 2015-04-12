@@ -18,6 +18,7 @@ Plugin 'tfnico/vim-gradle'
 Plugin 'tpope/vim-classpath'
 call vundle#end() 
 filetype plugin indent on
+syntax enable
 let mapleader = ","
 syntax on
 set title
@@ -28,7 +29,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-syntax enable
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
@@ -67,3 +67,4 @@ let g:UltiSnipsEditSplit="vertical"
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 set bt=
 set cursorline
+set t_Co=256
