@@ -16,6 +16,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tfnico/vim-gradle'
 Plugin 'tpope/vim-classpath'
+Plugin 'kien/ctrlp.vim'
 call vundle#end() 
 filetype plugin indent on
 syntax enable
@@ -64,7 +65,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 
 "set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
+set rtp+=/usr/lib64/python2.7/site-packages/powerline/bindings/vim
 set bt=
 set cursorline
 set t_Co=256
