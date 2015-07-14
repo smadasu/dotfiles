@@ -69,4 +69,4 @@ set rtp+=/usr/lib64/python2.7/site-packages/powerline/bindings/vim
 set bt=
 set cursorline
 set t_Co=256
-set colorcolumn=80
+"set colorcolumn=80

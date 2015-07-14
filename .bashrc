@@ -22,6 +22,7 @@ export PATH=$PATH:~/bin:~/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:$
 alias ll='ls -lrt'
 alias tmux='TERM=screen-256color-bce tmux'
 alias gs='git status'
+alias vim='nvim'
 
 # Turn on 256 color support...
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
