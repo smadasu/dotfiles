@@ -1,11 +1,12 @@
 call plug#begin('~/.nvim/plugged')
 " Make sure you use single quotes
 Plug 'junegunn/vim-easy-align'
-Plug 'kien/rainbow_parentheses.vim.git'
+Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/syntastic'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-classpath'
 Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
 Plug 'bling/vim-airline'
 
 " Group dependencies, vim-snippets depends on ultisnips
@@ -44,8 +45,9 @@ nmap <F5> :!/usr/src/linux/scripts/checkpatch.pl -f %<CR>
 nmap <F6> :!javac %<CR>
 nmap <F7> :!java %<CR>
 set cursorline
-"set rtp+=/usr/lib64/python3.3/site-packages/powerline/bindings/vim
-let $PYTHONPATH="/usr/lib/python3.3/site-packages"
+"set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
+"let $PYTHONPATH="/usr/lib/python3.3/site-packages"
+set rtp+=/usr/lib64/python3.4/site-packages/powerline/bindings/vim
 set laststatus=2
 let g:airline_powerline_fonts = 1
 set mouse=

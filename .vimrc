@@ -17,7 +17,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tfnico/vim-gradle'
 Plugin 'tpope/vim-classpath'
 Plugin 'kien/ctrlp.vim'
-call vundle#end() 
+Plugin 'majutsushi/tagbar'
+Plugin 'wikitopian/hardmode'
+call vundle#end()
 filetype plugin indent on
 syntax enable
 let mapleader = ","
@@ -61,12 +63,33 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-"let $PYTHONPATH="/usr/lib/python3.3/site-packages" 
+"let $PYTHONPATH="/usr/lib/python3.3/site-packages"
 
 
 "set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set rtp+=/usr/lib64/python2.7/site-packages/powerline/bindings/vim
+set rtp+=/usr/lib64/python3.4/site-packages/powerline/bindings/vim
 set bt=
 set cursorline
 set t_Co=256
 "set colorcolumn=80
+set mouse=
+nmap <F8> :TagbarToggle<CR>
+
+" s: Find this C symbol
+nnoremap  <leader>fs :cs find s <cword><CR>
+" g: Find this definition
+nnoremap  <leader>fg :cs find g <cword><CR>
+" d: Find functions called by this function
+nnoremap  <leader>fd :cs find d <cword><CR>
+" c: Find functions calling this function
+nnoremap  <leader>fc :cs find c <cword><CR>
+" t: Find this text string
+nnoremap  <leader>ft :call cscope#find('t', expand('<cword>'))<CR>
+" e: Find this egrep pattern
+nnoremap  <leader>fe :call cscope#find('e', expand('<cword>'))<CR>
+" f: Find this file
+nnoremap  <leader>ff :call cscope#find('f', expand('<cword>'))<CR>
+" i: Find files #including this file
+nnoremap  <leader>fi :call cscope#find('i', expand('<cword>'))<CR>
+set mouse=v
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
