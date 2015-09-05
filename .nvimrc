@@ -51,3 +51,4 @@ set rtp+=/usr/lib64/python3.4/site-packages/powerline/bindings/vim
 set laststatus=2
 let g:airline_powerline_fonts = 1
 set mouse=
+let g:powerline_pycmd = python3.4
