@@ -16,22 +16,17 @@ fi
 
 
 # Put your fun stuff here.
+source /usr/lib/python3.4/site-packages/powerline/bindings/bash/powerline.sh
 export EDITOR=/usr/bin/vim
 export LANG=en_US.utf8
-export PATH=$PATH:~/bin:~/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:$HOME/node-v0.10.30-linux-x64/bin
+export PATH=$PATH:~/bin:~/android-sdk-linux/platform-tools
 alias ll='ls -lrt'
-alias tmux='TERM=screen-256color-bce tmux'
+#alias tmux='TERM=screen-256color-bce tmux'
 alias gis='git status'
 alias gid='git diff'
+alias eu='cd $HOME/dev/linux/kernel/eudyptula'
 #alias vim='nvim'
-
-# Turn on 256 color support...
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-	export TERM='xterm-256color'
-else
-	export TERM='xterm-color'
-fi
-source $HOME/bash-git-prompt/gitprompt.sh
+#source $HOME/bash-git-prompt/gitprompt.sh
 if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
