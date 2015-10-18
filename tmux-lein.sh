@@ -6,4 +6,5 @@ tmux split-window -h
 tmux send-keys 'lein repl' 'Enter'
 tmux resize-pane -R 30
 tmux select-pane -L
+tmux resize-pane -Z
 tmux attach-session -d
